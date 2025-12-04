@@ -8,7 +8,9 @@ Enlace para acceder a Google Drive: https://drive.google.com/drive/folders/17pf6
 
 # Instalar los paquetes Python requeridos para el agente DQN:
 
+```bash
 pip3 install scikit-learn numpy matplotlib
+```
 
 # Crear workspace
 mkdir -p ~/dqn_navigation_ws/src
