@@ -25,9 +25,15 @@ cd ~/dqn_navigation_ws/src
 ```bash
 git clone https://github.com/belm23/Examen2_Robotica.git
 
-mv Examen2_Robotica/dqn_robot_nav .
+cd Examen2_Robotica
+git checkout ejercicio1
 
-cd ~/dqn_navigation_ws
+mv dqn_robot_nav ..
+
+cd ..
+rm -rf Examen2_Robotica
+
+ls
 ```
 
 # Configurar robot
