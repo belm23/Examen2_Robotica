@@ -17,7 +17,7 @@ Levantar el **agente de Micro-ROS** en Docker:
 
 ```bash
 docker run -it --rm \
-    --device=/dev/ttyACM0 \
+    --device=/dev/ttyUSB0 \
     microros/micro-ros-agent:humble serial --dev /dev/ttyUSB0 -b 115200
 ```
 
@@ -47,6 +47,7 @@ ros2 topic echo /cmd_vel
 Correr el entorno de simulación:
 
 ```bash
+export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
@@ -64,6 +65,8 @@ node = PosePerceptionNode(use_camera=False)
 ### 4.1. Ejecutar con cámara en vivo
 
 ```bash
+colcon build
+source install/setup.bash
 ros2 run perception_lab perception_node
 ```
 
@@ -72,6 +75,8 @@ ros2 run perception_lab perception_node
 1. Ejecutar el nodo:
 
 ```bash
+colcon build
+source install/setup.bash
 ros2 run perception_lab perception_node
 ```
 
