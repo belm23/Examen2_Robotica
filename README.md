@@ -4,11 +4,9 @@ Este repositorio contiene la implementación del algoritmo Deep Q-Network (DQN) 
 
 El modelo entrenado se incluye para su evaluación directa, cumpliendo el requisito de una Tasa de Éxito mínima del 30 - 40%.
 
-1.- Instalar los paquetes Python requeridos para el agente DQN:
+# Instalar los paquetes Python requeridos para el agente DQN:
 
 pip3 install scikit-learn numpy matplotlib
-
-2.- Clonar el repositorio:
 
 # Crear workspace
 mkdir -p ~/dqn_navigation_ws/src
