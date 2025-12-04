@@ -65,7 +65,7 @@ node = PosePerceptionNode(use_camera=False)
 ### 4.1. Ejecutar con cámara en vivo
 
 ```bash
-colcon build
+colcon build --packages-select perception_lab
 source install/setup.bash
 ros2 run perception_lab perception_node
 ```
@@ -75,7 +75,7 @@ ros2 run perception_lab perception_node
 1. Ejecutar el nodo:
 
 ```bash
-colcon build
+colcon build --packages-select perception_lab
 source install/setup.bash
 ros2 run perception_lab perception_node
 ```
