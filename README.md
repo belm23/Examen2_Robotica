@@ -1,12 +1,7 @@
-Perfecto, aquí tienes el **README** listo para copiar y pegar, usando tu título:
-
----
 
 # Ejercicio 2. Control Visual Turtlebot 
 
 Este proyecto tiene como objetivo controlar un **TurtleBot3** mediante ROS2 y Micro-ROS, usando datos de percepción obtenidos desde una cámara o una grabación de Kinect.
-
----
 
 ## Requisitos
 * ROS2 Humble
