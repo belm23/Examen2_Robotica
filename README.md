@@ -1,4 +1,4 @@
-# Examen2_Robotica
+# Ejercicio1_Robotica
 
 Este repositorio contiene la implementación del algoritmo Deep Q-Network (DQN) en ROS 2 (Humble) para entrenar un robot TurtleBot3 (modelo Burger) a navegar y evadir obstáculos utilizando únicamente datos del sensor LiDAR 2D.
 
