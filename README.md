@@ -9,7 +9,7 @@ Enlace para acceder a Google Drive: https://drive.google.com/drive/folders/17pf6
 # Instalar los paquetes Python requeridos para el agente DQN:
 
 ```bash
-pip3 install scikit-learn numpy matplotlib
+pip3 install "numpy<2.0" scikit-learn matplotlib
 ```
 
 # Crear workspace
@@ -20,20 +20,23 @@ mkdir -p ~/dqn_navigation_ws/src
 cd ~/dqn_navigation_ws/src
 ```
 
-# Clona el repositorio en 'src'
+# Clonar el repositorio en 'src'
 
 ```bash
+cd ~/dqn_navigation_ws/src
+
 git clone https://github.com/belm23/Examen2_Robotica.git
 
 cd Examen2_Robotica
 git checkout ejercicio1
+```
 
-mv dqn_robot_nav ..
-
-cd ..
-rm -rf Examen2_Robotica
-
-ls
+# Estructura
+```bash
+Examen2_Robotica/
+  README.md
+  src/
+    dqn_robot_nav/
 ```
 
 # Configurar robot
@@ -46,9 +49,16 @@ source ~/.bashrc
 # Colocar los resultados en el workspace
 
 ```bash
-ls ~/dqn_navigation_ws/src/dqn_robot_nav/
+# Suponiendo que se descargó en ~/Downloads y se llama results_20251204_162200
+cp -r ~/Downloads/results_20251204_162200 ~/dqn_navigation_ws/src/dqn_robot_nav/
+```
+# Deberia aparecer:
 
-mv ~/dqn_navigation_ws/src/dqn_robot_nav/results_20251204_162200 ~/dqn_navigation_ws/
+```bash
+dqn_robot_nav  package.xml  setup.py  results_20251204_162200...
+
+ls ~/dqn_navigation_ws/src/dqn_robot_nav/results_20251204_162200
+# debería ver: model_final.pkl, logs, etc.
 ```
 # Terminal 1
 
