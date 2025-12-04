@@ -8,9 +8,10 @@ Este proyecto tiene como objetivo controlar un **TurtleBot3** mediante ROS2 y Mi
 * ESP32 con Micro-ROS Agent
 * TurtleBot3 (simulado en Gazebo)
 * Video de Kinect (opcional, si no se usa cámara en vivo)
+* Docker
 
 ---
-
+Luego de clonar el repositorio eleminar de la carpera de src las carpetas de buil,install y log estas luego se generaran luego de compilar localmente
 ## 1. Configuración de Micro-ROS
 
 Levantar el **agente de Micro-ROS** en Docker:
@@ -84,4 +85,34 @@ ros2 run perception_lab perception_node
 
 ```bash
 ros2 bag play kinect_data2
+```
+### Ejercicio Extra.
+Requisitos
+
+Tener configurado micro-ROS en ESP32.
+
+Nodo de ROS2 depth_heatmap_node corriendo y publicando /proximity_zones.
+
+TurtleBot3 configurado en Gazebo o entorno real.
+
+Instrucciones
+
+Subir código ESP32
+
+Cambiar a la rama del ejercicio extra en tu repositorio ESP32.
+
+Subir y flashear el código en la placa ESP32.
+
+Ejecutar nodo de proximidad en ROS2
+
+Compilar el paquete como en el ejercicio 2:
+
+```bash
+colcon build --packages-select perception_lab
+source install/setup.bash
+```
+
+Ejecutar el nodo extra:
+```bash
+ros2 run perception_lab extra
 ```
