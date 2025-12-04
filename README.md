@@ -2,15 +2,13 @@ Perfecto, aquí tienes el **README** listo para copiar y pegar, usando tu títul
 
 ---
 
-# Ejercicio 2. Control Visual Turtlebot (30 pts)
+# Ejercicio 2. Control Visual Turtlebot 
 
 Este proyecto tiene como objetivo controlar un **TurtleBot3** mediante ROS2 y Micro-ROS, usando datos de percepción obtenidos desde una cámara o una grabación de Kinect.
 
 ---
 
 ## Requisitos
-
-* Docker
 * ROS2 Humble
 * ESP32 con Micro-ROS Agent
 * TurtleBot3 (simulado en Gazebo)
@@ -87,9 +85,3 @@ ros2 run perception_lab perception_node
 ```bash
 ros2 bag play kinect_data2
 ```
-
----
-
-Listo. Esto se puede copiar directamente como tu README.
-
-Si quieres, puedo hacer una **versión más resumida y visual**, lista para GitHub, con **tips y advertencias importantes**. ¿Quieres que haga eso?
