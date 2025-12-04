@@ -4,6 +4,8 @@ Este repositorio contiene la implementación del algoritmo Deep Q-Network (DQN) 
 
 El modelo entrenado se incluye para su evaluación directa, cumpliendo el requisito de una Tasa de Éxito mínima del 30 - 40%.
 
+Enlace para acceder a Google Drive: https://drive.google.com/drive/folders/17pf6HzhlNq3hmx_akqkE1gx96_V3cqTk 
+
 # Instalar los paquetes Python requeridos para el agente DQN:
 
 pip3 install scikit-learn numpy matplotlib
