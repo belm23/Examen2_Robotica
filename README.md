@@ -13,31 +13,45 @@ pip3 install scikit-learn numpy matplotlib
 ```
 
 # Crear workspace
+
+```bash
 mkdir -p ~/dqn_navigation_ws/src
 
 cd ~/dqn_navigation_ws/src
+```
 
 # Clona el repositorio en 'src'
+
+```bash
 git clone https://github.com/belm23/Examen2_Robotica.git
 
 mv Examen2_Robotica/dqn_robot_nav .
 
 cd ~/dqn_navigation_ws
+```
 
 # Configurar robot
+
+```bash
 echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 
 source ~/.bashrc
-
+```
 # Colocar los resultados en el workspace
+
+```bash
 ls ~/dqn_navigation_ws/src/dqn_robot_nav/
 
 mv ~/dqn_navigation_ws/src/dqn_robot_nav/results_20251204_162200 ~/dqn_navigation_ws/
-
+```
 # Terminal 1
-ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
+```bash
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
 # Terminal 2
+
+```bash
 cd ~/dqn_navigation_ws
 
 colcon build --packages-select dqn_robot_nav
@@ -45,8 +59,7 @@ colcon build --packages-select dqn_robot_nav
 source install/setup.bash
 
 ros2 run dqn_robot_nav test_node src/dqn_robot_nav/results_20251204_162200/model_final.pkl
-
-
+```
 
 
 
